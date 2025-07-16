@@ -44,7 +44,8 @@ public class BoneWindow : MonoBehaviour
     void OnActivate(ActivateEventArgs args)
     {
         // Args.InteractableObject ist dein Bone; hier genügt aber "this"
-        infoText.text = gameObject.name;
+        //   infoText.text = gameObject.name;
+        infoText.text = BoneMapper.GetGermanName(gameObject.name);
     }
 
     // 3) beim Loslassen

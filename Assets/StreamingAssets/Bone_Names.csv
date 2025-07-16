@@ -1,0 +1,253 @@
+s_capitate_R;Kopfbein rechts
+s_capitate_L;Kopfbein links
+s_hamate_R;Hakenbein rechts
+s_hamate_L;Hakenbein links
+s_lunate_R;Mondbein rechts
+s_lunate_L;Mondbein links
+s_scaphoid_R;Kahnbein rechts
+s_scaphoid_L;Kahnbein links
+s_trapezium_R;Großes Vieleckbein rechts
+s_trapezium_L;Großes Vieleckbein links
+s_trapezoid_R;Kleines Vieleckbein rechts
+s_trapezoid_L;Kleines Vieleckbein links
+s_triquetrum_R;Dreiecksbein rechts
+s_triquetrum_L;Dreiecksbein links
+s_pisiform_R;Erbsenbein rechts
+s_pisiform_L;Erbsenbein links
+s_humerus_R;Oberarmknochen rechts
+s_humerus_L;Oberarmknochen links
+s_radius_R;Speiche rechts
+s_radius_L;Speiche links
+s_ulna_R;Elle rechts
+s_ulna_L;Elle links
+s_metacarpal1_R;1. Mittelhandknochen rechts
+s_metacarpal1_L;1. Mittelhandknochen links
+s_metacarpal2_R;2. Mittelhandknochen rechts
+s_metacarpal2_L;2. Mittelhandknochen links
+s_metacarpal3_R;3. Mittelhandknochen rechts
+s_metacarpal3_L;3. Mittelhandknochen links
+s_metacarpal4_R;4. Mittelhandknochen rechts
+s_metacarpal4_L;4. Mittelhandknochen links
+s_metacarpal5_R;5. Mittelhandknochen rechts
+s_metacarpal5_L;5. Mittelhandknochen links
+s_proximalPhalanxHand1_R;Daumengrundglied rechts
+s_proximalPhalanxHand1_L;Daumengrundglied links
+s_proximalPhalanxHand2_R;Grundglied des Zeigefingers rechts
+s_proximalPhalanxHand2_L;Grundglied des Zeigefingers links
+s_proximalPhalanxHand3_R;Grundglied des Mittelfingers rechts
+s_proximalPhalanxHand3_L;Grundglied des Mittelfingers links
+s_proximalPhalanxHand4_R;Grundglied des Ringfingers rechts
+s_proximalPhalanxHand4_L;Grundglied des Ringfingers links
+s_proximalPhalanxHand5_R;Grundglied des kleinen Fingers rechts
+s_proximalPhalanxHand5_L;Grundglied des kleinen Fingers links
+s_middlePhalanxHand2_R;Mittelglied des Zeigefingers rechts
+s_middlePhalanxHand2_L;Mittelglied des Zeigefingers links
+s_middlePhalanxHand3_R;Mittelglied des Mittelfingers rechts
+s_middlePhalanxHand3_L;Mittelglied des Mittelfingers links
+s_middlePhalanxHand4_R;Mittelglied des Ringfingers rechts
+s_middlePhalanxHand4_L;Mittelglied des Ringfingers links
+s_middlePhalanxHand5_R;Mittelglied des kleinen Fingers rechts
+s_middlePhalanxHand5_L;Mittelglied des kleinen Fingers links
+s_distalPhalanxHand1_R;Daumenendglied rechts
+s_distalPhalanxHand1_L;Daumenendglied links
+s_distalPhalanxHand2_R;Endglied des Zeigefingers rechts
+s_distalPhalanxHand2_L;Endglied des Zeigefingers links
+s_distalPhalanxHand3_R;Endglied des Mittelfingers rechts
+s_distalPhalanxHand3_L;Endglied des Mittelfingers links
+s_distalPhalanxHand4_R;Endglied des Ringfingers rechts
+s_distalPhalanxHand4_L;Endglied des Ringfingers links
+s_distalPhalanxHand5_R;Endglied des kleinen Fingers rechts
+s_distalPhalanxHand5_L;Endglied des kleinen Fingers links
+s_01_thirdMolar;3. Molar
+s_02_secondMolar;2. Molar
+s_03_firstMolar;1. Molar
+s_04_secondBicuspid;2. Prämolar
+s_05_firstBicuspid;1. Prämolar
+s_06_cuspid;Eckzahn
+s_07_lateralIncisor;seitlicher Schneidezahn
+s_08_centralIncisor;mittlerer Schneidezahn
+s_09_centralIncisor;mittlerer Schneidezahn
+s_10_lateralIncisor;seitlicher Schneidezahn
+s_11_cuspid;Eckzahn
+s_12_firstBicuspid;1. Prämolar
+s_13_secondBicuspid;2. Prämolar
+s_14_firstMolar;1. Molar
+s_15_secondMolar;2. Molar
+s_16_thirdMolar;3. Molar
+s_17_thirdMolar;3. Molar
+s_18_secondMolar;2. Molar
+s_19_firstMolar;1. Molar
+s_20_secondBicuspid;2. Prämolar
+s_21_firstBicuspid;1. Prämolar
+s_22_cuspid;Eckzahn
+s_23_lateralIncisor;seitlicher Schneidezahn
+s_24_centralIncisor;mittlerer Schneidezahn
+s_25_centralIncisor;mittlerer Schneidezahn
+s_26_lateralIncisor;seitlicher Schneidezahn
+s_27_cuspid;Eckzahn
+s_28_firstBicuspid;1. Prämolar
+s_29_secondBicuspid;2. Prämolar
+s_30_firstMolar;1. Molar
+s_31_secondMolar;2. Molar
+s_32_thirdMolar;3. Molar
+s_bonyLabyrinth_L;knöchernes Labyrinth links
+s_bonyLabyrinth_R;knöchernes Labyrinth rechts
+s_bonyNasalSeptum;knöcherne Nasenscheidewand
+s_ethmoid;Siebbein
+s_frontal;Stirnbein
+s_nasal_L;Nasenbein links
+s_nasal_R;Nasenbein rechts
+s_occipital;Hinterhauptbein
+s_palatine_L;Gaumenbein links
+s_palatine_R;Gaumenbein rechts
+s_parietal_L;Scheitelbein links
+s_parietal_R;Scheitelbein rechts
+s_sphenoid;Keilbein
+s_stapes_L;Steigbügel links
+s_stapes_R;Steigbügel rechts
+s_lacrima_L;Tränenbein links
+s_lacrima_R;Tränenbein rechts
+s_malleus_L;Hammer links
+s_malleus_R;Hammer rechts
+s_mandible;Unterkieferknochen
+s_maxilla_L;Oberkieferknochen links
+s_maxilla_R;Oberkieferknochen rechts
+s_hyoid;Zungenbein
+s_incus_L;Amboss links
+s_incus_R;Amboss rechts
+s_temporal_L;Schläfenbein links
+s_temporal_R;Schläfenbein rechts
+s_vomer;Pflugscharbein
+s_zygomatic_L;Jochbein links
+s_zygomatic_R;Jochbein rechts
+s_inferiorNasalConcha_L;untere Nasenmuschel links
+s_inferiorNasalConcha_R;untere Nasenmuschel rechts
+s_clavicle_L;Schlüsselbein links
+s_clavicle_R;Schlüsselbein rechts
+s_coccyx;Steißbein
+s_costalCartilage_L;Rippenknorpel links
+s_costalCartilage_R;Rippenknorpel rechts
+s_hip_L;Hüftbein links
+s_hip_R;Hüftbein rechts
+s_intervertebralDiscC2C3;Bandscheibe C2/3
+s_intervertebralDiscC3C4;Bandscheibe C3/4
+s_intervertebralDiscC4C5;Bandscheibe C4/5
+s_intervertebralDiscC5C6;Bandscheibe C5/6
+s_intervertebralDiscC6C7;Bandscheibe C6/7
+s_intervertebralDiscC7T1;Bandscheibe C7/T1
+s_intervertebralDiscT1T2;Bandscheibe Th1/Th2
+s_intervertebralDiscT2T3;Bandscheibe Th2/Th3
+s_intervertebralDiscT3T4;Bandscheibe Th3/Th4
+s_intervertebralDiscT4T5;Bandscheibe Th4/Th5
+s_intervertebralDiscT5T6;Bandscheibe Th5/Th6
+s_intervertebralDiscT6T7;Bandscheibe Th6/Th7
+s_intervertebralDiscT7T8;Bandscheibe Th7/Th8
+s_intervertebralDiscT8T9;Bandscheibe Th8/Th9
+s_intervertebralDiscT9T10;Bandscheibe Th9/Th10
+s_intervertebralDiscT10T11;Bandscheibe Th10/Th11
+s_intervertebralDiscT11T12;Bandscheibe Th11/Th12
+s_intervertebralDiscT12L1;Bandscheibe Th12/L1
+s_intervertebralDiscL1L2;Bandscheibe L1/L2
+s_intervertebralDiscL2L3;Bandscheibe L2/L3
+s_intervertebralDiscL3L4;Bandscheibe L3/L4
+s_intervertebralDiscL4L5;Bandscheibe L4/L5
+s_intervertebralDiscL5S1;Bandscheibe L5/S1
+s_pubicSymphysisLigament;Band der Schambeinfuge
+s_ribs_L;Rippen links
+s_ribs_R;Rippen rechts
+s_sacrum;Kreuzbein
+s_scapula_L;Schulterblatt links
+s_scapula_R;Schulterblatt rechts
+s_sternumBody;Brustbein-Körper
+s_sternumManubrium;Brustbein-Handgriff
+s_sternumXiphoidProcess;Brustbein-Schwertfortsatz
+s_calcaneus_L;Fersenbein links
+s_calcaneus_R;Fersenbein rechts
+s_cuboid_L;Würfelbein links
+s_cuboid_R;Würfelbein rechts
+s_cuneiformIntermediate_L;mittleres Keilbein links
+s_cuneiformIntermediate_R;mittleres Keilbein rechts
+s_cuneiformLateral_L;laterales Keilbein links
+s_cuneiformLateral_R;laterales Keilbein rechts
+s_cuneiformMedial_L;mediales Keilbein links
+s_cuneiformMedial_R;mediales Keilbein rechts
+s_distalPhalanxFoot1_L;Großzehenendglied links
+s_distalPhalanxFoot1_R;Großzehenendglied rechts
+s_distalPhalanxFoot2_L;Endglied der 2. Zehe links
+s_distalPhalanxFoot2_R;Endglied der 2. Zehe rechts
+s_distalPhalanxFoot3_L;Endglied der 3. Zehe links
+s_distalPhalanxFoot3_R;Endglied der 3. Zehe rechts
+s_distalPhalanxFoot4_L;Endglied der 4. Zehe links
+s_distalPhalanxFoot4_R;Endglied der 4. Zehe rechts
+s_distalPhalanxFoot5_L;Endglied der 5. Zehe links
+s_distalPhalanxFoot5_R;Endglied der 5. Zehe rechts
+s_femur_L;Oberschenkelknochen links
+s_femur_R;Oberschenkelknochen rechts
+s_fibula_L;Wadenbein links
+s_fibula_R;Wadenbein rechts
+s_metatarsal1_L;1. Mittelfußknochen links
+s_metatarsal1_R;1. Mittelfußknochen rechts
+s_metatarsal2_L;2. Mittelfußknochen links
+s_metatarsal2_R;2. Mittelfußknochen rechts
+s_metatarsal3_L;3. Mittelfußknochen links
+s_metatarsal3_R;3. Mittelfußknochen rechts
+s_metatarsal4_L;4. Mittelfußknochen links
+s_metatarsal4_R;4. Mittelfußknochen rechts
+s_metatarsal5_L;5. Mittelfußknochen links
+s_metatarsal5_R;5. Mittelfußknochen rechts
+s_middlePhalanxFoot2_L;Mittelglied der 2. Zehe links
+s_middlePhalanxFoot2_R;Mittelglied der 2. Zehe rechts
+s_middlePhalanxFoot3_L;Mittelglied der 3. Zehe links
+s_middlePhalanxFoot3_R;Mittelglied der 3. Zehe rechts
+s_middlePhalanxFoot4_L;Mittelglied der 4. Zehe links
+s_middlePhalanxFoot4_R;Mittelglied der 4. Zehe rechts
+s_middlePhalanxFoot5_L;Mittelglied der 5. Zehe links
+s_middlePhalanxFoot5_R;Mittelglied der 5. Zehe rechts
+s_navicular_L;Kahnbein (Fuß) links
+s_navicular_R;Kahnbein (Fuß) rechts
+s_patella_L;Kniescheibe links
+s_patella_R;Kniescheibe rechts
+s_proximalPhalanxFoot1_L;Großzehengrundglied links
+s_proximalPhalanxFoot1_R;Großzehengrundglied rechts
+s_proximalPhalanxFoot2_L;Grundglied der 2. Zehe links
+s_proximalPhalanxFoot2_R;Grundglied der 2. Zehe rechts
+s_proximalPhalanxFoot3_L;Grundglied der 3. Zehe links
+s_proximalPhalanxFoot3_R;Grundglied der 3. Zehe rechts
+s_proximalPhalanxFoot4_L;Grundglied der 4. Zehe links
+s_proximalPhalanxFoot4_R;Grundglied der 4. Zehe rechts
+s_proximalPhalanxFoot5_L;Grundglied der 5. Zehe links
+s_proximalPhalanxFoot5_R;Grundglied der 5. Zehe rechts
+s_sesamoidLateral_L;laterales Sesambein links
+s_sesamoidLateral_R;laterales Sesambein rechts
+s_sesamoidMedial_L;mediales Sesambein links
+s_sesamoidMedial_R;mediales Sesambein rechts
+s_talus_L;Sprungbein links
+s_talus_R;Sprungbein rechts
+s_tibia_L;Schienbein links
+s_tibia_R;Schienbein rechts
+s_menisci_L;Menisken links
+s_menisci_R;Menisken rechts
+s_vertebraC01;Atlas (1. Halswirbel)
+s_vertebraC02;Axis (2. Halswirbel)
+s_vertebraC03;3. Halswirbel
+s_vertebraC04;4. Halswirbel
+s_vertebraC05;5. Halswirbel
+s_vertebraC06;6. Halswirbel
+s_vertebraC07;7. Halswirbel
+s_vertebraT01;1. Brustwirbel
+s_vertebraT02;2. Brustwirbel
+s_vertebraT03;3. Brustwirbel
+s_vertebraT04;4. Brustwirbel
+s_vertebraT05;5. Brustwirbel
+s_vertebraT06;6. Brustwirbel
+s_vertebraT07;7. Brustwirbel
+s_vertebraT08;8. Brustwirbel
+s_vertebraT09;9. Brustwirbel
+s_vertebraT10;10. Brustwirbel
+s_vertebraT11;11. Brustwirbel
+s_vertebraT12;12. Brustwirbel
+s_vertebraL01;1. Lendenwirbel
+s_vertebraL02;2. Lendenwirbel
+s_vertebraL03;3. Lendenwirbel
+s_vertebraL04;4. Lendenwirbel
+s_vertebraL05;5. Lendenwirbel

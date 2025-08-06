@@ -15,9 +15,17 @@ public class BoneThrow : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         grabInteractable = GetComponent<XRGrabInteractable>();
-
+        grabInteractable.throwOnDetach = false;
         grabInteractable.selectEntered.AddListener(OnGrab);
         grabInteractable.selectExited.AddListener(OnRelease);
+    }
+
+    void Update()
+    {
+        // Linie in Shoot-Richtung, Länge = shootForce
+        Debug.DrawRay(transform.position,
+                      transform.forward * shootForce,
+                      Color.cyan);
     }
 
     void OnDestroy()
@@ -31,24 +39,38 @@ public class BoneThrow : MonoBehaviour
         rb.isKinematic = true;
         rb.useGravity = false;
     }
-
     void OnRelease(SelectExitEventArgs args)
     {
-        // Physics wieder aktivieren
+        // 1) Physik wieder einschalten
         rb.isKinematic = false;
         rb.useGravity = true;
 
-        // Richtung bestimmen: 
-        // Entweder Objekt-Forward oder Controller-Forward, falls du das möchtest
-        Vector3 shootDir = transform.forward;
+        // 2) Abschussrichtung = Controller-Forward
+        Vector3 shootDir;
+        if (args.interactorObject is XRBaseControllerInteractor ci)
+        {
+            // Wenn ein AttachTransform gesetzt ist, nutze dessen Forward,
+            // sonst die Controller-Transform-Forward
+            shootDir = (ci.attachTransform != null)
+                ? ci.attachTransform.forward
+                : ci.transform.forward;
+        }
+        else if (Camera.main != null)
+        {
+            // Fallback: Kamerablickrichtung
+            shootDir = Camera.main.transform.forward;
+        }
+        else
+        {
+            // Letzter Rückgriff: Objekt-Forward
+            shootDir = transform.forward;
+        }
 
-        // Optional: Wenn du wirklich den Controller-Forward nutzen willst:
-        if (args.interactorObject is XRBaseControllerInteractor controllerInteractor)
-            shootDir = controllerInteractor.attachTransform.forward;
+        // 3) Velocity vergeben
+        Vector3 finalVel = shootDir.normalized * shootForce;
+        rb.velocity = finalVel;
 
-        // Geschwindigkeit setzen
-        rb.velocity = shootDir.normalized * shootForce;
-        // Optional: noch Drehimpuls
-        // rb.angularVelocity = Random.insideUnitSphere * someSpinAmount;
+        // 4) Log für Debug
+        Debug.Log($"[BoneThrow] ShootDir: {shootDir:F2}, Vel: {finalVel:F2}");
     }
 }

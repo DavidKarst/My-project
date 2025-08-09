@@ -10,10 +10,12 @@ public class BoneThrow : MonoBehaviour
 
     Rigidbody rb;
     XRGrabInteractable grabInteractable;
+    BoneStartPosition startPos;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        startPos = GetComponent<BoneStartPosition>();
         grabInteractable = GetComponent<XRGrabInteractable>();
         grabInteractable.throwOnDetach = false;
         grabInteractable.selectEntered.AddListener(OnGrab);
@@ -41,9 +43,10 @@ public class BoneThrow : MonoBehaviour
     }
     void OnRelease(SelectExitEventArgs args)
     {
-        // 1) Physik wieder einschalten
-        rb.isKinematic = false;
-        rb.useGravity = true;
+        if (startPos != null)
+        {
+            startPos.EnablePhysics();
+        }
 
         // 2) Abschussrichtung = Controller-Forward
         Vector3 shootDir;

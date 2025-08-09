@@ -1,14 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody), typeof(Collider))]
 public class BoneStartPosition : MonoBehaviour
 {
     private Vector3 startPos;
     private Quaternion startRot;
     private Transform startParent;
     private Rigidbody rb;
+    Collider col;
 
     private void Awake()
     {
@@ -16,8 +18,23 @@ public class BoneStartPosition : MonoBehaviour
         startRot = transform.rotation;
         startParent = transform.parent;
         rb = GetComponent<Rigidbody>();
+        col = GetComponent<Collider>();
+        SetToStart(true);
     }
 
+
+    public void EnablePhysics()
+    {
+        SetToStart(false);
+    }
+
+    void SetToStart(bool b)
+    {
+        rb.isKinematic = b;
+        rb.useGravity = !b;
+        rb.detectCollisions = true;
+
+    }
 
     public void ResetToStart()
     {
@@ -30,5 +47,6 @@ public class BoneStartPosition : MonoBehaviour
 
         transform.SetParent(startParent);
         transform.SetPositionAndRotation(startPos, startRot);
+        SetToStart(true);
     }
 }

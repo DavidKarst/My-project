@@ -5,24 +5,42 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class BoneWindow : MonoBehaviour
 {
     [Header("Referenzen")]
-    public GameObject infoPanel;    // dein Canvas/Panel
-    public TMP_Text infoText;     // TextMeshPro Text, oder benutze UnityEngine.UI.Text
+    public GameObject infoPanel;
+    public TMP_Text infoText;
+
+
+    [Header("Follow")]
+    public float speed = 20f;
+    public float distFromHead = 0.22f;
+    public float upOffsest = 0.03f;
+    //public Vector3 offSet = new Vector3(0, 0, 0.12f);
 
     XRGrabInteractable grab;
+    Transform followTarget;
+    Transform camHead;
+    //Quaternion rotOffset = Quaternion.identity;
+    //Vector3 posOffset;
 
     void Awake()
     {
         grab = GetComponent<XRGrabInteractable>();
 
-        // Events hookup
+        // Events Listener anmelden
         grab.selectEntered.AddListener(OnGrab);
         grab.selectExited.AddListener(OnRelease);
         grab.activated.AddListener(OnActivate);
+
+        camHead = Camera.main ? Camera.main.transform : null;
+
+
+        infoText.enableAutoSizing = true;       // passt Schriftgröße an
+
+
     }
 
     void OnDestroy()
     {
-        // sauber wieder abmelden
+        // Listener abmelden
         grab.selectEntered.RemoveListener(OnGrab);
         grab.selectExited.RemoveListener(OnRelease);
         grab.activated.RemoveListener(OnActivate);
@@ -31,26 +49,45 @@ public class BoneWindow : MonoBehaviour
     // 1) beim Greifen
     void OnGrab(SelectEnterEventArgs args)
     {
+        followTarget = args.interactorObject.transform;
         infoPanel.SetActive(true);
         infoText.text = "?";
 
+
+
+
         // Optional: Panel an der Controller‑Position ausrichten
-        var interactorTransform = args.interactorObject.transform;
-        infoPanel.transform.position = interactorTransform.position + interactorTransform.forward * 0.1f;
-        infoPanel.transform.rotation = interactorTransform.rotation;
+        //var interactorTransform = args.interactorObject.transform;
+        //infoPanel.transform.position = interactorTransform.position + interactorTransform.forward * 0.1f;
+        //infoPanel.transform.rotation = interactorTransform.rotation;
     }
 
     // 2) beim Trigger‑Drücken
     void OnActivate(ActivateEventArgs args)
     {
-        // Args.InteractableObject ist dein Bone; hier genügt aber "this"
-        //   infoText.text = gameObject.name;
+
         infoText.text = BoneMapper.GetGermanName(gameObject.name);
     }
 
     // 3) beim Loslassen
     void OnRelease(SelectExitEventArgs args)
     {
+        followTarget = null;
         infoPanel.SetActive(false);
+    }
+
+    private void LateUpdate()
+    {
+        if (followTarget == null || camHead == null)
+        {
+            return;
+        }
+        // Zielposition berechnen
+        Vector3 targetPos = followTarget.position + camHead.forward * distFromHead + camHead.up * upOffsest;
+        Quaternion targetRot = Quaternion.LookRotation(targetPos - camHead.position, camHead.up);
+
+        // interpolation
+        infoPanel.transform.position = Vector3.Lerp(infoPanel.transform.position, targetPos, Time.deltaTime * speed);
+        infoPanel.transform.rotation = Quaternion.Slerp(infoPanel.transform.rotation, targetRot, Time.deltaTime * speed);
     }
 }

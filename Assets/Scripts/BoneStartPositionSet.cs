@@ -10,6 +10,7 @@ public class BoneStartPositionSet : MonoBehaviour
         if (startSet != null)
         {
             startSet.ResetToStart();
+
         }
     }
 }

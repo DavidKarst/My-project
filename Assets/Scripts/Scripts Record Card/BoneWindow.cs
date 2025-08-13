@@ -20,7 +20,7 @@ public class BoneWindow : MonoBehaviour
     Transform camHead;
     //Quaternion rotOffset = Quaternion.identity;
     //Vector3 posOffset;
-
+    bool revealed;
     void Awake()
     {
         grab = GetComponent<XRGrabInteractable>();
@@ -66,7 +66,8 @@ public class BoneWindow : MonoBehaviour
     void OnActivate(ActivateEventArgs args)
     {
 
-        infoText.text = BoneMapper.GetGermanName(gameObject.name);
+        infoText.text = BoneMapper.GetName(gameObject.name);
+        revealed = true;
     }
 
     // 3) beim Loslassen
@@ -74,6 +75,11 @@ public class BoneWindow : MonoBehaviour
     {
         followTarget = null;
         infoPanel.SetActive(false);
+    }
+    public void RefreshIfVisible()
+    {
+        if (infoPanel != null && infoPanel.activeSelf && revealed)
+            infoText.text = BoneMapper.GetName(gameObject.name);
     }
 
     private void LateUpdate()

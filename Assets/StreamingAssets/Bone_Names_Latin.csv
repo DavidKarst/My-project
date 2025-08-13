@@ -1,0 +1,253 @@
+s_capitate_R;Os capitatum
+s_capitate_L;Os capitatum
+s_hamate_R;Os hamatum
+s_hamate_L;Os hamatum
+s_lunate_R;Os lunatum
+s_lunate_L;Os lunatum
+s_scaphoid_R;Os scaphoideum
+s_scaphoid_L;Os scaphoideum
+s_trapezium_R;Os trapezium
+s_trapezium_L;Os trapezium
+s_trapezoid_R;Os trapezoideum
+s_trapezoid_L;Os trapezoideum
+s_triquetrum_R;Os triquetrum
+s_triquetrum_L;Os triquetrum
+s_pisiform_R;Os pisiforme
+s_pisiform_L;Os pisiforme
+s_humerus_R;Humerus
+s_humerus_L;Humerus
+s_radius_R;Radius
+s_radius_L;Radius
+s_ulna_R;Ulna
+s_ulna_L;Ulna
+s_metacarpal1_R;Os metacarpale I
+s_metacarpal1_L;Os metacarpale I
+s_metacarpal2_R;Os metacarpale II
+s_metacarpal2_L;Os metacarpale II
+s_metacarpal3_R;Os metacarpale III
+s_metacarpal3_L;Os metacarpale III
+s_metacarpal4_R;Os metacarpale IV
+s_metacarpal4_L;Os metacarpale IV
+s_metacarpal5_R;Os metacarpale V
+s_metacarpal5_L;Os metacarpale V
+s_proximalPhalanxHand1_R;Phalanx proximalis pollicis
+s_proximalPhalanxHand1_L;Phalanx proximalis pollicis
+s_proximalPhalanxHand2_R;Phalanx proximalis indicis
+s_proximalPhalanxHand2_L;Phalanx proximalis indicis
+s_proximalPhalanxHand3_R;Phalanx proximalis digiti medii
+s_proximalPhalanxHand3_L;Phalanx proximalis digiti medii
+s_proximalPhalanxHand4_R;Phalanx proximalis digiti anularis
+s_proximalPhalanxHand4_L;Phalanx proximalis digiti anularis
+s_proximalPhalanxHand5_R;Phalanx proximalis digiti minimi
+s_proximalPhalanxHand5_L;Phalanx proximalis digiti minimi
+s_middlePhalanxHand2_R;Phalanx media indicis
+s_middlePhalanxHand2_L;Phalanx media indicis
+s_middlePhalanxHand3_R;Phalanx media digiti medii
+s_middlePhalanxHand3_L;Phalanx media digiti medii
+s_middlePhalanxHand4_R;Phalanx media digiti anularis
+s_middlePhalanxHand4_L;Phalanx media digiti anularis
+s_middlePhalanxHand5_R;Phalanx media digiti minimi
+s_middlePhalanxHand5_L;Phalanx media digiti minimi
+s_distalPhalanxHand1_R;Phalanx distalis pollicis
+s_distalPhalanxHand1_L;Phalanx distalis pollicis
+s_distalPhalanxHand2_R;Phalanx distalis indicis
+s_distalPhalanxHand2_L;Phalanx distalis indicis
+s_distalPhalanxHand3_R;Phalanx distalis digiti medii
+s_distalPhalanxHand3_L;Phalanx distalis digiti medii
+s_distalPhalanxHand4_R;Phalanx distalis digiti anularis
+s_distalPhalanxHand4_L;Phalanx distalis digiti anularis
+s_distalPhalanxHand5_R;Phalanx distalis digiti minimi
+s_distalPhalanxHand5_L;Phalanx distalis digiti minimi
+s_01_thirdMolar;Dens molaris tertius
+s_02_secondMolar;Dens molaris secundus
+s_03_firstMolar;Dens molaris primus
+s_04_secondBicuspid;Dens premolaris secundus
+s_05_firstBicuspid;Dens premolaris primus
+s_06_cuspid;Dens caninus
+s_07_lateralIncisor;Dens incisivus lateralis
+s_08_centralIncisor;Dens incisivus medialis
+s_09_centralIncisor;Dens incisivus medialis
+s_10_lateralIncisor;Dens incisivus lateralis
+s_11_cuspid;Dens caninus
+s_12_firstBicuspid;Dens premolaris primus
+s_13_secondBicuspid;Dens premolaris secundus
+s_14_firstMolar;Dens molaris primus
+s_15_secondMolar;Dens molaris secundus
+s_16_thirdMolar;Dens molaris tertius
+s_17_thirdMolar;Dens molaris tertius
+s_18_secondMolar;Dens molaris secundus
+s_19_firstMolar;Dens molaris primus
+s_20_secondBicuspid;Dens premolaris secundus
+s_21_firstBicuspid;Dens premolaris primus
+s_22_cuspid;Dens caninus
+s_23_lateralIncisor;Dens incisivus lateralis
+s_24_centralIncisor;Dens incisivus medialis
+s_25_centralIncisor;Dens incisivus medialis
+s_26_lateralIncisor;Dens incisivus lateralis
+s_27_cuspid;Dens caninus
+s_28_firstBicuspid;Dens premolaris primus
+s_29_secondBicuspid;Dens premolaris secundus
+s_30_firstMolar;Dens molaris primus
+s_31_secondMolar;Dens molaris secundus
+s_32_thirdMolar;Dens molaris tertius
+s_bonyLabyrinth_L;Labyrinthus osseus
+s_bonyLabyrinth_R;Labyrinthus osseus
+s_bonyNasalSeptum;Septum nasi osseum
+s_ethmoid;Os ethmoidale
+s_frontal;Os frontale
+s_nasal_L;Os nasale
+s_nasal_R;Os nasale
+s_occipital;Os occipitale
+s_palatine_L;Os palatinum
+s_palatine_R;Os palatinum
+s_parietal_L;Os parietale
+s_parietal_R;Os parietale
+s_sphenoid;Os sphenoidale
+s_stapes_L;Stapes
+s_stapes_R;Stapes
+s_lacrima_L;Os lacrimale
+s_lacrima_R;Os lacrimale
+s_malleus_L;Malleus
+s_malleus_R;Malleus
+s_mandible;Mandibula
+s_maxilla_L;Maxilla
+s_maxilla_R;Maxilla
+s_hyoid;Os hyoideum
+s_incus_L;Incus
+s_incus_R;Incus
+s_temporal_L;Os temporale
+s_temporal_R;Os temporale
+s_vomer;Vomer
+s_zygomatic_L;Os zygomaticum
+s_zygomatic_R;Os zygomaticum
+s_inferiorNasalConcha_L;Concha nasalis inferior
+s_inferiorNasalConcha_R;Concha nasalis inferior
+s_clavicle_L;Clavicula
+s_clavicle_R;Clavicula
+s_coccyx;Os coccygis
+s_costalCartilage_L;Cartilago costalis
+s_costalCartilage_R;Cartilago costalis
+s_hip_L;Os coxae
+s_hip_R;Os coxae
+s_intervertebralDiscC2C3;Discus intervertebralis
+s_intervertebralDiscC3C4;Discus intervertebralis
+s_intervertebralDiscC4C5;Discus intervertebralis
+s_intervertebralDiscC5C6;Discus intervertebralis
+s_intervertebralDiscC6C7;Discus intervertebralis
+s_intervertebralDiscC7T1;Discus intervertebralis
+s_intervertebralDiscT1T2;Discus intervertebralis
+s_intervertebralDiscT2T3;Discus intervertebralis
+s_intervertebralDiscT3T4;Discus intervertebralis
+s_intervertebralDiscT4T5;Discus intervertebralis
+s_intervertebralDiscT5T6;Discus intervertebralis
+s_intervertebralDiscT6T7;Discus intervertebralis
+s_intervertebralDiscT7T8;Discus intervertebralis
+s_intervertebralDiscT8T9;Discus intervertebralis
+s_intervertebralDiscT9T10;Discus intervertebralis
+s_intervertebralDiscT10T11;Discus intervertebralis
+s_intervertebralDiscT11T12;Discus intervertebralis
+s_intervertebralDiscT12L1;Discus intervertebralis
+s_intervertebralDiscL1L2;Discus intervertebralis
+s_intervertebralDiscL2L3;Discus intervertebralis
+s_intervertebralDiscL3L4;Discus intervertebralis
+s_intervertebralDiscL4L5;Discus intervertebralis
+s_intervertebralDiscL5S1;Discus intervertebralis
+s_pubicSymphysisLigament;Ligamentum pubicum superius
+s_ribs_L;Costae
+s_ribs_R;Costae
+s_sacrum;Os sacrum
+s_scapula_L;Scapula
+s_scapula_R;Scapula
+s_sternumBody;Corpus sterni
+s_sternumManubrium;Manubrium sterni
+s_sternumXiphoidProcess;Processus xiphoideus
+s_calcaneus_L;Calcaneus
+s_calcaneus_R;Calcaneus
+s_cuboid_L;Os cuboideum
+s_cuboid_R;Os cuboideum
+s_cuneiformIntermediate_L;Os cuneiforme intermedium
+s_cuneiformIntermediate_R;Os cuneiforme intermedium
+s_cuneiformLateral_L;Os cuneiforme laterale
+s_cuneiformLateral_R;Os cuneiforme laterale
+s_cuneiformMedial_L;Os cuneiforme mediale
+s_cuneiformMedial_R;Os cuneiforme mediale
+s_distalPhalanxFoot1_L;Phalanx distalis hallucis
+s_distalPhalanxFoot1_R;Phalanx distalis hallucis
+s_distalPhalanxFoot2_L;Phalanx distalis digiti pedis secundi
+s_distalPhalanxFoot2_R;Phalanx distalis digiti pedis secundi
+s_distalPhalanxFoot3_L;Phalanx distalis digiti pedis tertii
+s_distalPhalanxFoot3_R;Phalanx distalis digiti pedis tertii
+s_distalPhalanxFoot4_L;Phalanx distalis digiti pedis quarti
+s_distalPhalanxFoot4_R;Phalanx distalis digiti pedis quarti
+s_distalPhalanxFoot5_L;Phalanx distalis digiti pedis quinti
+s_distalPhalanxFoot5_R;Phalanx distalis digiti pedis quinti
+s_femur_L;Os femoris
+s_femur_R;Os femoris
+s_fibula_L;Fibula
+s_fibula_R;Fibula
+s_metatarsal1_L;Os metatarsale I
+s_metatarsal1_R;Os metatarsale I
+s_metatarsal2_L;Os metatarsale II
+s_metatarsal2_R;Os metatarsale II
+s_metatarsal3_L;Os metatarsale III
+s_metatarsal3_R;Os metatarsale III
+s_metatarsal4_L;Os metatarsale IV
+s_metatarsal4_R;Os metatarsale IV
+s_metatarsal5_L;Os metatarsale V
+s_metatarsal5_R;Os metatarsale V
+s_middlePhalanxFoot2_L;Phalanx media digiti pedis secundi
+s_middlePhalanxFoot2_R;Phalanx media digiti pedis secundi
+s_middlePhalanxFoot3_L;Phalanx media digiti pedis tertii
+s_middlePhalanxFoot3_R;Phalanx media digiti pedis tertii
+s_middlePhalanxFoot4_L;Phalanx media digiti pedis quarti
+s_middlePhalanxFoot4_R;Phalanx media digiti pedis quarti
+s_middlePhalanxFoot5_L;Phalanx media digiti pedis quinti
+s_middlePhalanxFoot5_R;Phalanx media digiti pedis quinti
+s_navicular_L;Os naviculare
+s_navicular_R;Os naviculare
+s_patella_L;Patella
+s_patella_R;Patella
+s_proximalPhalanxFoot1_L;Phalanx proximalis hallucis
+s_proximalPhalanxFoot1_R;Phalanx proximalis hallucis
+s_proximalPhalanxFoot2_L;Phalanx proximalis digiti pedis secundi
+s_proximalPhalanxFoot2_R;Phalanx proximalis digiti pedis secundi
+s_proximalPhalanxFoot3_L;Phalanx proximalis digiti pedis tertii
+s_proximalPhalanxFoot3_R;Phalanx proximalis digiti pedis tertii
+s_proximalPhalanxFoot4_L;Phalanx proximalis digiti pedis quarti
+s_proximalPhalanxFoot4_R;Phalanx proximalis digiti pedis quarti
+s_proximalPhalanxFoot5_L;Phalanx proximalis digiti pedis quinti
+s_proximalPhalanxFoot5_R;Phalanx proximalis digiti pedis quinti
+s_sesamoidLateral_L;Os sesamoideum hallucis laterale
+s_sesamoidLateral_R;Os sesamoideum hallucis laterale
+s_sesamoidMedial_L;Os sesamoideum hallucis mediale
+s_sesamoidMedial_R;Os sesamoideum hallucis mediale
+s_talus_L;Talus
+s_talus_R;Talus
+s_tibia_L;Tibia
+s_tibia_R;Tibia
+s_menisci_L;Menisci genus
+s_menisci_R;Menisci genus
+s_vertebraC01;Atlas (Vertebra cervicalis I)
+s_vertebraC02;Axis (Vertebra cervicalis II)
+s_vertebraC03;Vertebra cervicalis III
+s_vertebraC04;Vertebra cervicalis IV
+s_vertebraC05;Vertebra cervicalis V
+s_vertebraC06;Vertebra cervicalis VI
+s_vertebraC07;Vertebra cervicalis VII
+s_vertebraT01;Vertebra thoracica I
+s_vertebraT02;Vertebra thoracica II
+s_vertebraT03;Vertebra thoracica III
+s_vertebraT04;Vertebra thoracica IV
+s_vertebraT05;Vertebra thoracica V
+s_vertebraT06;Vertebra thoracica VI
+s_vertebraT07;Vertebra thoracica VII
+s_vertebraT08;Vertebra thoracica VIII
+s_vertebraT09;Vertebra thoracica IX
+s_vertebraT10;Vertebra thoracica X
+s_vertebraT11;Vertebra thoracica XI
+s_vertebraT12;Vertebra thoracica XII
+s_vertebraL01;Vertebra lumbalis I
+s_vertebraL02;Vertebra lumbalis II
+s_vertebraL03;Vertebra lumbalis III
+s_vertebraL04;Vertebra lumbalis IV
+s_vertebraL05;Vertebra lumbalis V

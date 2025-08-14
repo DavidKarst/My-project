@@ -5,6 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 [RequireComponent(typeof(Rigidbody), typeof(Collider))]
 public class BoneMeta : MonoBehaviour
 {
+    public static event System.Action<BoneMeta> OnAnyBoneSnapped;
     [Header("Zuordnung")]
     public BodyPart part;
     public Transform snapTarget;     // -> Anchor an Torben A
@@ -15,15 +16,27 @@ public class BoneMeta : MonoBehaviour
 
     XRGrabInteractable grab;
     Rigidbody rb;
+    bool snapped;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
         grab = GetComponent<XRGrabInteractable>();
     }
-
+    public PartKind Kind => part switch
+    {
+        BodyPart.RightArm or BodyPart.LeftArm => PartKind.Arm,
+        BodyPart.RightLeg or BodyPart.LeftLeg => PartKind.Leg,
+        BodyPart.Skull => PartKind.Skull,
+        _ => PartKind.Body
+    };
     public void Snap()
     {
+        if (snapped)
+        {
+            snapped = true;
+        }
+
         if (!snapTarget)
         {
             Debug.LogWarning($"[{name}] SnapTarget fehlt.");
@@ -59,5 +72,7 @@ public class BoneMeta : MonoBehaviour
             foreach (var r in GetComponentsInChildren<Renderer>())
                 r.enabled = false;
         }
+
+        OnAnyBoneSnapped?.Invoke(this);
     }
 }

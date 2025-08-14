@@ -4,7 +4,7 @@ using Puzzle;
 [RequireComponent(typeof(Collider))]
 public class PartSnapZone : MonoBehaviour
 {
-    public BodyPart accepts;          // welcher Part darf hier?
+    public PartKind acceptsKind = PartKind.Arm;        // welcher Part darf hier?
     public bool snapOnEnter = true;   // sofort snappen, wenn korrekt
 
     void Reset() { GetComponent<Collider>().isTrigger = true; }
@@ -15,7 +15,7 @@ public class PartSnapZone : MonoBehaviour
         if (meta == null) return;
 
         // nur korrekter Part darf snappen
-        if (meta.part != accepts) return;
+        if (meta.Kind != acceptsKind) return;
 
         if (snapOnEnter) meta.Snap();
     }

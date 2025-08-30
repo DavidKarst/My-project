@@ -1,5 +1,6 @@
 // ProgressUI.cs
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class ProgressUI : MonoBehaviour
@@ -14,6 +15,8 @@ public class ProgressUI : MonoBehaviour
     [Header("Optionale Events")]
     public System.Action onEmpty;               // z. B. Game Over
     public System.Action onFull;                // z. B. Bonus
+
+
 
     void Reset() => bar = GetComponent<Image>();
 
@@ -30,6 +33,10 @@ public class ProgressUI : MonoBehaviour
 
         if (bar.fillAmount <= 0f) onEmpty?.Invoke();
         if (bar.fillAmount >= 1f) onFull?.Invoke();
+
+
+
+
     }
 
     void HandleSnap(BoneMeta meta)
@@ -40,4 +47,6 @@ public class ProgressUI : MonoBehaviour
         float v = bar.fillAmount + addOnSnap;
         bar.fillAmount = Mathf.Clamp01(v);
     }
+
+
 }

@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Torben_Record_Card.unity
+    guid: 744bbefed41878149ad7e8ec0d40b6ce
+  - enabled: 1
+    path: Assets/Scenes/Torbn_Puzzel.unity
+    guid: 241831e7767076a47b22e33e5ace3937
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4c0b7001ea70ec94d8a5f809fed68605, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 96dc2bd01917547408878007b4844cf7, type: 2}

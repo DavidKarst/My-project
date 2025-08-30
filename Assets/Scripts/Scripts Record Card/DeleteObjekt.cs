@@ -21,8 +21,8 @@ public class DeleteObjekt : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // Robuste Erkennung: suche den Bone-Root über ein Kennscript
-        // z.B. jeder Knochen hat BoneStartPosition (dein Projekt)
-        var boneRoot = other.GetComponentInParent<BoneStartPosition>(); // <-- dein Script
+        // z.B. jeder Knochen hat BoneStartPosition 
+        var boneRoot = other.GetComponentInParent<BoneStartPosition>(); //
         if (boneRoot != null)
         {
             Destroy(boneRoot.gameObject);

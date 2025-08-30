@@ -22,13 +22,7 @@ public class BoneThrow : MonoBehaviour
         grabInteractable.selectExited.AddListener(OnRelease);
     }
 
-    void Update()
-    {
-        // Linie in Shoot-Richtung, Länge = shootForce
-        Debug.DrawRay(transform.position,
-                      transform.forward * shootForce,
-                      Color.cyan);
-    }
+
 
     void OnDestroy()
     {

@@ -8,10 +8,10 @@ public class BoneMeta : MonoBehaviour
     public static event System.Action<BoneMeta> OnAnyBoneSnapped;
     [Header("Zuordnung")]
     public BodyPart part;
-    public Transform snapTarget;     // -> Anchor an Torben A
+    public Transform snapTarget;     // -> Anchor an Torben Ziel
 
     [Header(" Sicht beim Einrasten ")]
-    public GameObject showOnSnap;    // -> Bone bei Torben A (oder dessen Root)
+    public GameObject showOnSnap;    // -> Bone bei Torben Ziel (oder dessen Root)
     public bool hideThisOnSnap = true;
 
     XRGrabInteractable grab;
@@ -58,7 +58,7 @@ public class BoneMeta : MonoBehaviour
             // falls GO deaktiviert war:
             showOnSnap.SetActive(true);
 
-            // falls du nur Renderer deaktiviert hattest:
+            // falls nur Renderer deaktiviert war:
             foreach (var r in showOnSnap.GetComponentsInChildren<Renderer>(true))
                 r.enabled = true;
         }

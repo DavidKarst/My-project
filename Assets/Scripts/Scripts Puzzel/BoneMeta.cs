@@ -1,4 +1,4 @@
-using Puzzle; // falls du BodyPart in Namespace hast
+using Puzzle;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -11,7 +11,7 @@ public class BoneMeta : MonoBehaviour
     public Transform snapTarget;     // -> Anchor an Torben Ziel
 
     [Header(" Sicht beim Einrasten ")]
-    public GameObject showOnSnap;    // -> Bone bei Torben Ziel (oder dessen Root)
+    public GameObject showOnSnap;    // -> Bone bei Torben Ziel 
     public bool hideThisOnSnap = true;
 
     XRGrabInteractable grab;
@@ -23,7 +23,7 @@ public class BoneMeta : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         grab = GetComponent<XRGrabInteractable>();
     }
-    public PartKind Kind => part switch
+    public PartKind Kind => part switch //keine Unterscheidung in links und rechts
     {
         BodyPart.RightArm or BodyPart.LeftArm => PartKind.Arm,
         BodyPart.RightLeg or BodyPart.LeftLeg => PartKind.Leg,

@@ -53,13 +53,6 @@ public class BoneWindow : MonoBehaviour
         infoPanel.SetActive(true);
         infoText.text = "?";
 
-
-
-
-        // Optional: Panel an der Controller‑Position ausrichten
-        //var interactorTransform = args.interactorObject.transform;
-        //infoPanel.transform.position = interactorTransform.position + interactorTransform.forward * 0.1f;
-        //infoPanel.transform.rotation = interactorTransform.rotation;
     }
 
     // 2) beim Trigger‑Drücken

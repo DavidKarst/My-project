@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     [SerializeField] string recordScene = "Torben_Record_Card";
-    [SerializeField] string puzzleScene = "Torbn_Puzzel"; // exakt so wie im Projekt!
+    [SerializeField] string puzzleScene = "Torbn_Puzzel";
 
     public void LoadRecord() => Load(recordScene);
     public void LoadPuzzle() => Load(puzzleScene);
@@ -14,13 +14,9 @@ public class SceneLoader : MonoBehaviour
     {
         if (string.IsNullOrEmpty(sceneName)) return;
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
-        // oder asynchron:
-        // StartCoroutine(LoadAsync(sceneName));
+
     }
 
-    System.Collections.IEnumerator LoadAsync(string sceneName)
-    {
-        yield return SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
-    }
+
 }
 
